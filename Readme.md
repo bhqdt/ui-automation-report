@@ -14,7 +14,7 @@
 ### 方法一：在线预览（推荐）
 
 本项目已部署在GitHub Pages，请访问以下链接直接查看：
-[在这里粘贴你后面生成的GitHub链接]
+https://bhqdt.github.io/ui-automation-report/
 
 ### 方法二：本地查看
 
