@@ -10,12 +10,10 @@
         .container-box { max-width: 56rem; margin: 0 auto; }
         .card { background: white; padding: 2.5rem; border-radius: 1rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
         
-        /* 标题样式 */
         h1 { color: #1e293b; letter-spacing: -0.025em; }
         h2 { color: #2563eb; font-size: 1.5rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.75rem; margin-bottom: 1.5rem; }
         h3 { color: #475569; font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }
         
-        /* 图片样式 */
         img { 
             width: 100%; 
             border-radius: 0.5rem; 
@@ -27,7 +25,6 @@
         img:hover { transform: scale(1.01); }
         .img-caption { font-size: 0.875rem; color: #64748b; text-align: center; margin-top: 0.75rem; margin-bottom: 2rem; font-style: italic; }
         
-        /* 列表样式 */
         ul { list-style-type: disc; padding-left: 1.5rem; space-y: 0.5rem; }
         li { margin-bottom: 0.5rem; line-height: 1.6; }
     </style>
@@ -50,7 +47,7 @@
                 <p class="text-blue-800">构建一个能够“看懂”手机界面、“听懂”用户指令并自主完成操作的智能代理系统。</p>
             </div>
             
-            <img src="background.png" alt="基于LLM的UI自动化概念">
+            <img src="pictures/background.png" alt="基于LLM的UI自动化概念">
             <p class="img-caption">图 1：项目背景与概念演示</p>
         </div>
 
@@ -58,7 +55,7 @@
             <h2>2. 技术路线</h2>
             <p class="mb-6 text-lg">本项目采用了分层架构设计，确保系统各模块解耦且高效协作。</p>
             
-            <img src="route.png" alt="技术路线流程图">
+            <img src="pictures/route.png" alt="技术路线流程图">
             <p class="img-caption">图 2：技术路线架构全景图</p>
 
             <div class="grid md:grid-cols-2 gap-8 mt-8">
@@ -97,7 +94,7 @@
         <div class="card">
             <h2>3. 项目目标与设计机会</h2>
             
-            <img src="goals.png" alt="项目目标与设计机会">
+            <img src="pictures/goals.png" alt="项目目标与设计机会">
             <p class="img-caption">图 3：项目核心目标与设计机会分析</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -126,14 +123,14 @@
             <div class="mb-12">
                 <h3>4.1 多App UI识别能力拓展</h3>
                 <p class="mb-4">针对拼多多、得物、淘宝等应用的典型页面构建了结构化UI数据集，验证了现有LLM在新App上的零样本操作能力。</p>
-                <img src="dataset.png" alt="拼多多任务结构化数据示例">
+                <img src="pictures/dataset.png" alt="拼多多任务结构化数据示例">
                 <p class="img-caption">图 4：针对拼多多App构建的结构化任务数据集</p>
             </div>
 
             <div class="mb-12 border-t pt-8 border-dashed border-slate-200">
                 <h3>4.2 知识库驱动的操作增强</h3>
                 <p class="mb-4">构建了轻量级操作知识库，涵盖常见用户意图、标准操作路径及异常处理策略，显著提升了操作成功率。</p>
-                <img src="knowledge.png" alt="操作知识库示例">
+                <img src="pictures/knowledge.png" alt="操作知识库示例">
                 <p class="img-caption">图 5：集成至Agent决策流程的操作知识库</p>
             </div>
 
