@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中期汇报——基于LLM的UI自动化</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Microsoft YaHei', sans-serif; background-color: #f3f4f6; }
+        .card { background: white; padding: 2rem; border-radius: 1rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        h1 { color: #1f2937; }
+        h2 { color: #2563eb; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        h3 { color: #4b5563; font-weight: bold; margin-top: 1rem; }
+        ul { list-style-type: disc; margin-left: 1.5rem; color: #4b5563; }
+        li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4">中期汇报：基于LLM的UI自动化</h1>
+            <p class="text-xl text-gray-600">探索大语言模型与移动端UI自动化的深度融合</p>
+        </header>
+
+        <div class="card" id="background">
+            <h2 class="text-2xl font-bold">1. 项目背景</h2>
+            <p class="mb-4 text-gray-700">
+                [cite_start]随着移动应用生态的迅猛发展，用户对智能交互的需求日益增长。传统UI自动化工具（如Appium）依赖预定义脚本，难以应对动态界面和复杂任务 [cite: 4]。
+            </p>
+            <p class="text-gray-700">
+                [cite_start]<strong>本项目目标：</strong> 构建一个能够“看懂”手机界面、“听懂”用户指令并自主完成操作的智能代理系统 [cite: 5]。
+            </p>
+        </div>
+
+        <div class="card" id="tech-route">
+            <h2 class="text-2xl font-bold">2. 技术路线</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3>2.1 UI感知层</h3>
+                    <ul>
+                        [cite_start]<li>使用YOLO模型进行图标检测 [cite: 9]</li>
+                        [cite_start]<li>使用OCR技术识别界面文本内容 [cite: 10]</li>
+                        [cite_start]<li>利用Florence等视觉模型进行语义理解 [cite: 11]</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>2.2 语义理解层</h3>
+                    <ul>
+                        [cite_start]<li>整合用户指令、当前UI状态及历史记录 [cite: 15]</li>
+                        [cite_start]<li>通过大语言模型（如Llama 3）理解上下文 [cite: 16]</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>2.3 动作规划层</h3>
+                    <ul>
+                        [cite_start]<li>解析LLM输出的高层动作（如“点击搜索”） [cite: 20]</li>
+                        [cite_start]<li>将抽象动作映射为具体坐标或控件标识 [cite: 21]</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>2.4 执行与反馈层</h3>
+                    <ul>
+                        [cite_start]<li>通过ADB执行具体操作 [cite: 25]</li>
+                        [cite_start]<li>实时获取新界面状态，形成闭环反馈 [cite: 26]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4 p-4 bg-blue-50 rounded text-sm text-blue-800">
+                [cite_start]<strong>特色机制：</strong> 多模态信息融合、交互历史维护、界面加载检测、操作成功率评估 [cite: 29, 30, 31, 32]。
+            </div>
+        </div>
+
+        <div class="card" id="goals">
+            <h2 class="text-2xl font-bold">3. 项目目标</h2>
+            <ul class="space-y-2">
+                [cite_start]<li><strong>UI感知：</strong> 实时解析App界面结构（控件类型、文本、位置） [cite: 35]。</li>
+                [cite_start]<li><strong>意图理解：</strong> 准确理解自然语言指令（如“帮我订一张高铁票”） [cite: 36]。</li>
+                [cite_start]<li><strong>动作规划与执行：</strong> 生成并执行合法、高效的UI操作序列 [cite: 37]。</li>
+                [cite_start]<li><strong>泛化与适应性：</strong> 支持跨应用、跨平台，无需单独编写规则 [cite: 38]。</li>
+            </ul>
+        </div>
+
+        <div class="card" id="progress">
+            <h2 class="text-2xl font-bold">4. 当前进展</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-lg">4.1 多App UI识别能力拓展</h3>
+                [cite_start]<p class="text-gray-700">针对拼多多、得物、淘宝构建了结构化UI数据集。验证了现有LLM在新App上的零样本操作能力 [cite: 41]。</p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg">4.2 知识库驱动的操作增强</h3>
+                [cite_start]<p class="text-gray-700">针对拼多多构建了轻量级操作知识库，涵盖常见用户意图、标准操作路径及异常处理策略 [cite: 43-46]。</p>
+            </div>
+
+            <div>
+                <h3 class="text-lg">4.3 Agent评测体系搭建</h3>
+                [cite_start]<p class="text-gray-700">已部署开源Agent Cuga，正在接入LlamaTouch测试集以对比系统性能 [cite: 49]。</p>
+            </div>
+        </div>
+
+        <div class="card" id="innovation">
+            <h2 class="text-2xl font-bold">5. 项目意义与创新点</h2>
+            <ul class="grid md:grid-cols-3 gap-4 text-center">
+                <li class="p-4 border rounded hover:bg-gray-50">
+                    [cite_start]<strong>从单点到泛化</strong><br>系统性解决跨App UI理解难题 [cite: 51]
+                </li>
+                <li class="p-4 border rounded hover:bg-gray-50">
+                    [cite_start]<strong>知识 + LLM 双驱动</strong><br>兼顾准确性与灵活性 [cite: 52]
+                </li>
+                <li class="p-4 border rounded hover:bg-gray-50">
+                    [cite_start]<strong>强调可评测性</strong><br>引入外部Agent与标准测试集 [cite: 53]
+                </li>
+            </ul>
+        </div>
+
+        <div class="card" id="future">
+            <h2 class="text-2xl font-bold">6. 下一步计划</h2>
+            <ol class="list-decimal ml-6 text-gray-700 space-y-2">
+                [cite_start]<li>完善知识库体系（扩展至淘宝、得物）[cite: 55]</li>
+                [cite_start]<li>提升UI解析鲁棒性（针对动态内容优化）[cite: 56]</li>
+                [cite_start]<li>加速评测体系建设（完成LlamaTouch测试流程）[cite: 57]</li>
+                [cite_start]<li>探索微调策略（基于自建数据集进行SFT）[cite: 58]</li>
+            </ol>
+        </div>
+
+        <footer class="text-center text-gray-500 mt-12 mb-6">
+            <p>UI Automation Project Report &copy; 2024</p>
+        </footer>
+    </div>
+
+</body>
+</html>
